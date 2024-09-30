@@ -6,10 +6,10 @@
 
         <section class="flex justify-center my-12 ">
             <div
-                class="max-w-md relative flex border border-black  flex-col p-4 rounded-md text-black bg-white px-12 py-6">
-                <div class="text-2xl font-bold mb-2 text-[#1e0e4b] text-center">Welcome back to <span
-                        class="text-[#7747ff]">App</span></div>
-                <div class="text-sm font-normal mb-4 text-center text-[#1e0e4b]">Create an account account</div>
+                class="max-w-md relative flex border border-black  flex-col p-4 rounded-md text-black bg-gray px-12 py-6">
+                <div class="text-2xl font-bold mb-2 text-[#1e0e4b] text-center">Welcome  <span
+                        class="text-[#7747ff]">Back</span></div>
+                <div class="text-sm font-normal mb-4 text-center text-[#1e0e4b]">Create your account</div>
                 <form class="flex flex-col gap-3" action="/signup_process" method="post">
                     <div class="block relative">
                         <label for="name"
@@ -38,10 +38,16 @@
                             class="rounded border border-gray-200 text-sm w-full font-normal leading-[18px] text-black tracking-[0px] appearance-none block h-11 m-0 p-[11px] focus:ring-2 ring-offset-2  ring-gray-900 outline-0">
                     </div>
 
-
                     <div class="block relative">
                         <label for="password"
                             class="block text-gray-600 cursor-text text-sm leading-[140%] font-normal mb-2">Password</label>
+                        <input type="password" id="password" name="password" required
+                            class="rounded border border-gray-200 text-sm w-full font-normal leading-[18px] text-black tracking-[0px] appearance-none block h-11 m-0 p-[11px] focus:ring-2 ring-offset-2 ring-gray-900 outline-0">
+
+                    </div>
+                    <div class="block relative">
+                        <label for="confirm password"
+                            class="block text-gray-600 cursor-text text-sm leading-[140%] font-normal mb-2">Confirm Password</label>
                         <input type="password" id="password" name="password" required
                             class="rounded border border-gray-200 text-sm w-full font-normal leading-[18px] text-black tracking-[0px] appearance-none block h-11 m-0 p-[11px] focus:ring-2 ring-offset-2 ring-gray-900 outline-0">
 
@@ -55,6 +61,10 @@
                         href="/login">Login </a></div>
             </div>
         </section>
+
+        <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen src="https://www.google.com/maps/embed/v1/place?q=place_id:ChIJM45ffcMMQBgRLEF4BSSBr7A&key=AIzaSyCERbElJNmFICZmDgxVXXsZ_M_mR5ziQlY">
+      
+        </iframe>
 
         <%- include("../common/footer.ejs") %>
             </body>

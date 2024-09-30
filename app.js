@@ -23,7 +23,7 @@ app.get("*", (req, res) => {
 })
 
 
-app.listen("3000", () => {
-  console.log("Application is running successfully");
+app.listen("3002", () => {
+    console.log("Application is running successfully");
 });
 
